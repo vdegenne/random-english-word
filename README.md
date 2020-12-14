@@ -7,4 +7,4 @@ Check the link in the description.
 
 ---
 
-https://www.buymeacoffee.com/vdegenne
+support: https://www.buymeacoffee.com/vdegenne
