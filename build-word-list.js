@@ -12,7 +12,7 @@ const fs = require('fs');
   });
 
   // remove duplicates
-  lis = [...lis]
+  lis = [...new Set(lis)]
 
   fs.writeFileSync('words.js',`const words = ${JSON.stringify(lis)};`)
 })();
