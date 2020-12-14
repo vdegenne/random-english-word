@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>random english word</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@material/mwc-button@0.20.0/mwc-button.js?module"></script>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0;
+        font-family: Roboto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      mwc-button {
+        --mdc-theme-primary: #283593;
+        margin-bottom: 15px;
+      }
+    </style>
+    <mwc-button raised icon="shuffle" onclick="openRandom()">random</mwc-button>
+    <span id="total" style="color:grey"></span>
+    <script src="./words.js"></script>
+    <script>
+      function openRandom() {
+        const word = words[Math.floor(Math.random() * words.length - 1)];
+        window.open(`https://www.oxfordlearnersdictionaries.com/definition/english/${word}`, '_blank');
+      }
+
+      total.innerText = `${words.length} words`;
+    </script>
+  </body>
+</html>

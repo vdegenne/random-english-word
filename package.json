@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "jsdom": "^16.4.0",
+    "node-fetch": "^2.6.1"
+  },
+  "scripts": {
+    "build": "node build-word-list.js"
+  }
+}
